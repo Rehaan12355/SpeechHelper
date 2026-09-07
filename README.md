@@ -13,6 +13,8 @@ The goal is to build a system that captures mouth movements from video,
 processes them into a dataset, and eventually trains a model to recognize
 words from visual speech.
 
+* Essentially creating a digital lip reader.
+
 ## Current Progress
 
 - [x] Webcam video capture with OpenCV
