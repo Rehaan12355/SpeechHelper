@@ -7,11 +7,13 @@ FRAME_HEIGHT = 64
 
 
 def preprocess_frame(frame):
+    gray_frame = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
     resized_frame = cv.resize(
-        frame, (FRAME_WIDTH, FRAME_HEIGHT)
+        gray_frame, (FRAME_WIDTH, FRAME_HEIGHT)
     )
     
     resized_frame = resized_frame.astype('float32') / 255
+    resized_frame = np.expand_dims(resized_frame, axis=-1)
     return resized_frame
 
 
