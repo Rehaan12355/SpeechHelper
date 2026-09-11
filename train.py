@@ -139,8 +139,10 @@ with torch.no_grad():
         predictions = outputs.argmax(dim=1)
         
         correct += (predictions == labels).sum().item()
-        
+
         total += labels.size(0)
+        print("Predictions:", predictions)
+        print("Labels:", labels)        
     print(
         f"Accuracy={correct/total}"
     )

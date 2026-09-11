@@ -14,6 +14,8 @@ def save_frame(frame, frame_count, folder):
 def create_clip_folder(word, clip_count):
     
     clip_folder = f"data/{word}/clip_{clip_count:03d}"
+    
+    print(clip_folder)
     os.makedirs(clip_folder, exist_ok=True)
     
     return clip_folder

@@ -15,7 +15,7 @@ frame_count = 0
 
 CLIP_LENGTH = 45
 recording = False
-clip_count = 0
+clip_count = 101
 word = input("Enter word to record: ").strip().lower()
 recording = False
 
